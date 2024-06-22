@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Swal from 'sweetalert2'
 
 
 const initialState = {
@@ -51,6 +51,11 @@ const Home = () => {
 
 		if (!exist) {
 			setContactList([...contactList, contact])
+			Swal.fire({
+				title: "Excelente!",
+				text: "Se agrego el contacto!",
+				icon: "success"
+			});
 			setContact(initialState)
 			setError(false)
 		} else {
@@ -124,7 +129,7 @@ const Home = () => {
 						{
 							contactList.map((item, index) => {
 								return (
-									<li>
+									<li key={index}>
 										<p>Nombre:{item.lastname}</p>
 										<p>Nombre:{item.email}</p>
 										<p>Nombre:{item.phone}</p>
