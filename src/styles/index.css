@@ -10,3 +10,15 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    border: 1px solid red;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 10px;
+}
