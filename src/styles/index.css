@@ -10,3 +10,13 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.my-contact{
+    margin: 10px 0px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.my-contact p{
+    margin: 0px;
+    padding: 0px;
+}
